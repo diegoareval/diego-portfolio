@@ -1,13 +1,7 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import ProjectCard from './ProjectCards'
+import Particle from '../Particle'
 
 function Projects() {
   return (
@@ -17,80 +11,86 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+        <p style={{ color: 'white' }}>
+          Here are a few companies I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              imgPath={'https://hospy.co/8e9660d36c073d52.png'}
+              isBlog={true}
+              title="Hospy"
+              description="Herramienta que permite disminuir costos, automatizar procesos, ahorrar tiempo y brindar un mejor servicio a sus huéspedes.
+              "
+              ghLink=""
+              demoLink="https://hospy.co/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              imgPath={
+                'https://media.licdn.com/dms/image/C560BAQGT_s0nY8BjUw/company-logo_200_200/0/1638804458082?e=2147483647&v=beta&t=8072BgMUDqe0wN87-PsRKa3-EC1zftkj01iJKYWtNEs'
+              }
+              isBlog={true}
+              title="Carbodylab"
+              description="Carbodylab is one of the best US company related with Auto repair, in this case i help to create new features and improve existing features."
+              ghLink=""
+              demoLink="https://www.carbodylab.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              imgPath={
+                'https://inmobify.info/wp-content/uploads/2022/08/Logo-inmobify-08-1024x390.png'
+              }
+              isBlog={true}
+              title="Inmobify"
+              description="It's a realstate marketplace that provide options to list houses, contact potential customers and also automatize real state common tasks, etc"
+              ghLink=""
+              demoLink="inmobify.net"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              imgPath={"https://img.freepik.com/free-photo/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept_1423-126.jpg"}
+              isBlog={true}
+              title="Ignite Tecnologies"
+              description="It is a consulting company i contributed them to create products to their customer and provide solutions to common problems"
+              ghLink=""
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              imgPath={
+                'https://binoxmsp.com/wp-content/uploads/2020/12/Binox-Logo-white.png'
+              }
+              isBlog={true}
+              title="Binox Software"
+              description="Binox improves sales process by sourcing 95% Human verified leads that fit with your target market. While maintaining your PSA and CRM databases in sync."
+              ghLink=""
+              demoLink="https://binoxmsp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              imgPath={"https://mycoco.us/static/media/metodInput.1a2f1880.png"}
+              isBlog={true}
+              title="Cocomio Languages"
+              description="It is a platform that helps people to learn a new language based on input, output, reviews and then study using spaced repetition methodology"
+              ghLink=""
+              demoLink="https://mycoco.us/"
             />
           </Col>
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
