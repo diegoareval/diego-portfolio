@@ -21,7 +21,7 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am expert in classics like
+              <br />I am an expert in classics like
               <i>
                 <b className="purple"> Ruby and Javascript/Typescript </b>
               </i>
